@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity"
+    android:background="@drawable/intrview_bckgrnd"
+    android:id="@+id/front_page_layout">
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/smq"
+        android:onClick="simpleQuestions"
+        android:id="@+id/sq"
+        android:layout_marginTop="42dp"
+        android:background="#3f3737"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/tq"
+        android:onClick="toughQuestions"
+        android:id="@+id/tfq"
+        android:layout_marginTop="62dp"
+        android:background="#FF3F3737"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/sq"
+        android:layout_alignLeft="@+id/sq"
+        android:layout_alignStart="@+id/sq"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="@string/sa"
+        android:id="@+id/sap"
+        android:onClick="seeOtherApps"
+        android:background="#FF3F3737"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/tfq"
+        android:layout_alignLeft="@+id/rate"
+        android:layout_alignStart="@+id/rate"
+        android:layout_marginTop="62dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Rate Our App"
+        android:onClick="rateApp"
+        android:id="@+id/rate"
+        android:layout_marginTop="62dp"
+        android:background="#FF3F3737"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/sap"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
